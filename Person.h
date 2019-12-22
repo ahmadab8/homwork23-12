@@ -1,7 +1,6 @@
-//
-// Created by Izadeen Alkoran on 11/12/2019.
-//
+
 #include <iostream>
+#include<string>
 using namespace std;
 #ifndef GITKOMEWORK_PERSON_H
 #define GITKOMEWORK_PERSON_H
@@ -12,8 +11,10 @@ class Person {
     long id;
     int age;
 public:
-    Person(char *name,long id,int age):id(id),age(age){
-    strcpy(this->name,name);
+    Person(char *name1,long id,int age):id(id),age(age){
+		for (int i = 0;i < sizeof(name1) - 1;i++)
+			name[i] = name1[i];
+		name[sizeof(name1) - 1] = '\0';
     }
     
 };
