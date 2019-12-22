@@ -1,6 +1,6 @@
 #include "Person.h"
 
-class Employee :public Person
+class Employee :public virtual Person
 {
 	float salary;
 public:

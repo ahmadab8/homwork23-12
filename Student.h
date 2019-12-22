@@ -1,7 +1,7 @@
 #include "string.h"
 #include "Person.h"
 
-class Student: public Person {
+class Student: public virtual Person {
 private:
 	int average;
 	char institute[10];
